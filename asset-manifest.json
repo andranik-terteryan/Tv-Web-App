@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Tv-Web-App/static/css/main.b020872a.css",
+    "main.js": "/Tv-Web-App/static/js/main.80eee64f.js",
+    "index.html": "/Tv-Web-App/index.html",
+    "main.b020872a.css.map": "/Tv-Web-App/static/css/main.b020872a.css.map",
+    "main.80eee64f.js.map": "/Tv-Web-App/static/js/main.80eee64f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b020872a.css",
+    "static/js/main.80eee64f.js"
+  ]
+}
