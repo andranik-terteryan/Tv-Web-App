@@ -1,0 +1,40 @@
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  &__section {
+    padding-left: 157px;
+    min-height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0px);
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    max-width: calc(100% - 350px);
+    z-index: 1;
+    background: transparent
+      linear-gradient(90deg, rgba(4, 4, 4, 0.8) 0%, rgba(4, 4, 4, 0) 100%) 0% 0%
+      no-repeat padding-box;
+    transition: width 0.3s, transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    content: " ";
+    width: 0%;
+  }
+
+  &--menu__open {
+    &::after {
+      opacity: 1;
+      width: 100%;
+      transform: translateX(350px);
+    }
+  }
+}

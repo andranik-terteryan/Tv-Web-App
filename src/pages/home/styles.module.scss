@@ -1,0 +1,11 @@
+@import "../../assets/styles/mixins.scss";
+
+.main-panel {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 3px;
+    padding-top: 180px;
+    @include flex-column;
+    position: relative;
+}

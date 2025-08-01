@@ -1,0 +1,55 @@
+@import "../../assets/styles/pallete.scss";
+@import "../../assets/styles/mixins.scss";
+
+.button {
+    @include buttonNulled;
+    padding: 19px 21px;
+    max-width: 240px;
+    width: 100%;
+    border-radius: 40px;
+    @include fontRem(32, 700, 34);
+    text-align: center;
+    cursor: pointer;
+    transition: .3s transform;
+    transform: scale(1);
+
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    &.secondary {
+        background: transparent linear-gradient(128deg, #2727F5 0%, #001671 100%) 0% 0% no-repeat padding-box;
+        color: $color-light-gray;
+        background-size: 200% 200%;
+        background-position: 0% 50%;
+        color: $color-light-gray;
+        transition: background-position 0.5s ease;
+
+        &:hover {
+            background-position: 100% 50%;
+        }
+    }
+
+    &.primary {
+        color: $color-black-havy;
+        background-color: $color-light-gray;
+    }
+
+    &.icon {
+        span {
+            position: relative;
+            padding-left: 30px;
+
+            &::after {
+                content: " ";
+                width: 17px;
+                height: 20px;
+                background-color: $color-black;
+                clip-path: polygon(0 2%, 0% 100%, 100% 50%);
+                @include absoluteCenter(vertical);
+                left: 0;
+                display: block;
+            }
+        }
+    }
+}
